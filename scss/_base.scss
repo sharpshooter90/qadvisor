@@ -20,8 +20,12 @@
 // @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
 
+
 $fa-font-path:  "../bower_components/font-awesome/fonts";
+$OpenSansPath:	"../bower_components/open-sans-fontface/fonts";	
 
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "../bower_components/open-sans-fontface/sass/open-sans.scss";
 
 @import "../bower_components/font-awesome/scss/font-awesome.scss"

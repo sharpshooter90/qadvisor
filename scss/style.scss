@@ -1,58 +1,171 @@
-@import "base";
+  @import "base";
 
-$primary-color: #07C1A7;
+  $primary-color      : #07C1A7;
+  $panel-bg           : #E6E6E6;
+  $content-color      : #333;
 
-$prefix: qp;
+  $prefix: qp;
 
 
-.#{$prefix} {
+  body {
+    font-family: 'Open Sans';
+  }
 
-	&-container {
+  .#{$prefix} {
 
-	}
+    &-section {
+      margin-bottom: 20px;
 
-	&-has-navbar {
-		
-		&--fixed {
-			padding: {
-				top: 70px;
-			}
-		}
-	}
+      &__title {
+        margin-bottom: 10px;
 
-	&-navbar {
+        font: {
+          size: 18px;
+          weight: 400;
+        }
+      }
+    }
 
-		> li {
+    &-panel {
+
+      &__header {
+        padding: 15px;
+        background-color: $panel-bg;
+      }
+
+      &__content {
+        padding: 15px;
+        background-color: lighten($panel-bg, 5%);
+      }
+
+      &__link {
+        color: $primary-color;
+      }
+
+      &__info {
+        font: {
+          weight: 300;
+        }
+      }
+
+      &__title {
+        margin-bottom: 15px;
+        font: {
+          weight: 500;
+        }
+      }
+
+      &__meta-info {
+        color: lighten($content-color, 35%);
+
+        &--italic {
+          font: {
+            style: italic;
+          }
+        }
+      }
+
+    }
+
+    &-container {
+
+    }
+
+    &-has-navbar {
+
+      &--fixed {
+       padding: {
+        top: 70px;
+      }
+    }
+  }
+
+  &-sidebar{
+    padding: 20px;
+
+    &__header {
+      padding: 10px;
+      font-weight: bold; }
+
+      .feed{
+        padding: 10px;
+
+        .umbrella{
+          margin: 0 10px 10px 10px;
+          text-align: center;
+          border-radius: 12.5px;
+          background-color: #3dd794;
+          width: 25px;
+          height: 25px;
+          color: white;
+          padding-top: 2px;
+          float: left;
+
+        }
+        .text_star_comments{
+          margin-right: 60px;
+
+          .star{
+            color: grey;
+            margin-left: 45px;
+
+            .fa-star{
+              color: gold;
+            }
+
+            span {
+              font-size: .9em;
+            }
+          }
+          .voilet{
+            margin-left: 45px;
+            color: purple;
+
+            span {
+              font-size: .9em;
+            }
+
+          }
+
+        }
+      }
+    }
+
+  &-navbar {
+
+    > li {
       > a {
         padding: 13px 5px;
       }
     }
 
-		&--radius {
+    &--radius {
 
-			.fa {
-				background-color: rgba(black, 0.2);
-				border-radius: 50%;
-        width: 24px;
-        height: 24px;
-        line-height: 24px;
-        vertical-align: middle;
-        text-align: center;
-			}
+     .fa {
+      background-color: rgba(black, 0.2);
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      vertical-align: middle;
+      text-align: center;
+    }
 
-		}
-	}
+  }
+  }
 
   &-breadcrumb {
+    padding: 0;
+    position: relative;
 
     a {
-      color: #333;
+      color: $content-color;
     }
 
     > li {
       &:first-child {
-        position: relative;
-        left: -25px;
+        position: absolute;
+        left: -35px;
 
         + li {
           &:before {
@@ -62,22 +175,50 @@ $prefix: qp;
       }
     }
   }
-}
+  }
+    .nav {
+      &.nav-tabs {
+        > li {
+          &:first-child {
+            > a {
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
 
+  // overrides
+  .navbar-default {
+      background-color: $primary-color;
+  }
 
-// overrides
-.navbar-default {
-	background-color: $primary-color;
-}
+  .navbar-default .navbar-nav > li > a {
+      color: #fff;
+  }
 
-.navbar-default .navbar-nav > li > a {
-	color: #fff;
-}
+  .breadcrumb {
+    background-color: transparent;
+  }
 
-.breadcrumb {
-  background-color: transparent;
-}
+  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    border: none;
+  }
 
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-  border: none;
-}
+  .nav-tabs > li > a {
+    text-transform: uppercase;
+    color: lighten($content-color, 25%);
+  }
+
+  .nav-tabs > li.active > a {
+    border-bottom: 2px solid darken(#ddd, 50%)!important;
+    font-weight: bold;
+  }
+
+  .tab-content {
+    padding-top: 20px;
+  }
+
+  a.navbar-brand.qp-section__title {
+    color: #fff;
+  }

@@ -23,7 +23,7 @@
             <li><a href="#"><span class="fa fa-bars"></span></a></li>
           </ul>
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">qplum</a>
+            <a class="navbar-brand qp-section__title" href="#">qplum</a>
           </div>
           <ul class="nav navbar-nav navbar-right qp-navbar qp-navbar--radius">
             <li><a href="#"><span class="fa fa-bell"></span></a></li>
@@ -36,17 +36,15 @@
     </nav>
     <!-- container -->
     <div class="container qp-container">
-      <div class="row">
-        <div class="col-xs-12">
-          <ol class="breadcrumb qp-breadcrumb">
+      <div class="qp-section">
+        <ol class="breadcrumb qp-breadcrumb">
             <li><a href="#"><span class="fa fa-long-arrow-left"></span></a></li>
             <li><a href="#">qAdvisor</a></li>
           </ol>
-        </div>
       </div>
       <div class="row">
-        <div class="col-xs-9">
-          <div>
+        <div class="col-xs-12 col-sm-12 col-md-8">
+          <div class="qp-section">
 
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
@@ -59,20 +57,22 @@
               <div role="tabpanel" class="tab-pane active" id="performance">
                 <div class="qp-panel">
                   <div class="qp-panel__header">
-                    <div class="col-xs-4">
+                    <div class="row">
+                      <div class="col-xs-4">
                       <h4 class="qp-panel__title">My Portfolio</h4>
                       <span class="qp-panel__info">$23,678,456.89</span>
                     </div>
                     <div class="col-xs-8">
                       <h4>Today's Gain/Loss</h4>
-                      <span class="qp-panel__header-info">$23,678,65.</span>
+                      <span class="qp-panel__info">$23,678,65.</span>
+                    </div>
                     </div>
                   </div>
                   <div class="qp-panel__content">
                     <div class="qp-section__title">
                       CHOOSE AN ACCOUNT TO SEE PERFORMANCE
                     </div>
-                    <div class="qp-panel__title">Linked Accounts <span class="qp-panel__meta-info">3 Accounts updated as of 10 jul, 2015</span></div>
+                    <div class="qp-panel__title">Linked Accounts <span class="qp-panel__meta-info qp-panel__meta-info--italic">3 Accounts updated as of 10 jul, 2015</span></div>
                     <div class="">
                       <div class="radio">
                         <label>
@@ -93,70 +93,96 @@
               </div>
               <div role="tabpanel" class="tab-pane" id="recommendations">...</div>
             </div>
-
           </div>
 
           <!-- section select -->
-          <div class="row">
-            <div class="col-xs-4">
-              <div class="form-horizontal">
-                <label for="" class="control-label">COMPARE AGAINTS</label>
-                <select class="form-control">
-                  <option>Choose A benchmark</option>
-                </select>
+          <div class="qp-section">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="form-horizontal">
+                  <label for="" class="qp-section__title">COMPARE AGAINTS</label>
+                  <select class="form-control">
+                    <option>Choose A benchmark</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
-
           <!-- section slider -->
 
           <!-- section table data -->
-
-          <!-- Nav tabs -->
+          <div class="qp-section">
+                      <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
               <li role="presentation"><a href="#alloc" aria-controls="alloc" role="tab" data-toggle="tab">ALLOCATION</a></li>
               <li role="presentation"><a href="#perf" aria-controls="perf" role="tab" data-toggle="tab">PERFORMANCE</a></li>
               <li role="presentation" class="active"><a href="#stat" aria-controls="stat" role="tab" data-toggle="tab">STATS</a></li>
             </ul>
-
             <!-- Tab panes -->
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane" id="alloc">
-                
               </div>
               <div role="tabpanel" class="tab-pane" id="perf">...</div>
               <div role="tabpanel" class="tab-pane active" id="stat">
                 <div class="table-responsive">
-    <table class="table">
-        <thead>
-            <tr>
-                <th>ACCOUNT</th>
-                <th>Merrill Lynch</th>
-                <th>Fedility</th>
-                <th>TOTAL</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>FEE</td>
-                <td>$ 5000</td>
-                <td>$ 5000</td>
-                <td>$ 5000</td>
-            </tr>
-            <tr>
-                <td>DIVIDEND</td>
-                <td>$ 5000</td>
-                <td>$ 2000</td>
-                <td>$ 2000</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+              <table class="table">
+                  <thead>
+                      <tr>
+                          <th>ACCOUNT</th>
+                          <th>Merrill Lynch</th>
+                          <th>Fedility</th>
+                          <th>TOTAL</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>FEE</td>
+                          <td>$ 5000</td>
+                          <td>$ 5000</td>
+                          <td>$ 5000</td>
+                      </tr>
+                      <tr>
+                          <td>DIVIDEND</td>
+                          <td>$ 5000</td>
+                          <td>$ 2000</td>
+                          <td>$ 2000</td>
+                      </tr>
+                  </tbody>
+              </table>
+              </div>
               </div>
             </div>
+          </div>
         </div>
-        <div class="col-xs-3">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In veniam illum quas omnis enim quod asperiores aut? Eveniet molestias delectus culpa assumenda ipsam, deserunt, excepturi, provident et asperiores magni voluptatum.
+
+        <div class="col-xs-12 col-sm-12 col-md-4 qp-sidebar hidden-sm hidden-sm">
+          <div class="qp-sidebar__header">You might want to see</div>
+            <div class="feed">
+              <div class="umbrella"><i class="fa fa-umbrella fa-lg"></i></div>
+              <div class="text_star_comments" >
+                  The second post comes next to first in a bold format
+                    <div class="star"><i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i>
+                      <em>24 March,2015</em></div>
+                      <div class="voilet"><em><i class="fa fa-paw"></i>    50 points for voting the article</em></div>
+                </div>
+            </div>
+
+      <div class="feed">
+        <div class="umbrella"><i class="fa fa-umbrella fa-lg"></i></div>
+        <div class="text_star_comments" >The second post comes next to first in a bold format
+          <div class="star"><i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <span>24 March,2015</span></div>
+            <div class="voilet"><span><i class="fa fa-paw"></i>    50 points for voting the article</span></div>
+          </div>
+      </div>
         </div>
       </div>
     </div>
