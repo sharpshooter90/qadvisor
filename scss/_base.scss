@@ -1,0 +1,27 @@
+
+// // Core variables and mixins
+// @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+// @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// // Reset and dependencies
+// @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+
+// // Core CSS
+// @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/code";
+// @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+// @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+
+// // Components
+// @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/alerts";
+// @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
+
+// // Utility classes
+// @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+// @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+
+$fa-font-path:  "../bower_components/font-awesome/fonts";
+
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "../bower_components/font-awesome/scss/font-awesome.scss"

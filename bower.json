@@ -1,0 +1,23 @@
+{
+  "name": "Two-Roads",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "sharpshooter90"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.5.0",
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.6"
+  }
+}

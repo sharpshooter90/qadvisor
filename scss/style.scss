@@ -1,0 +1,83 @@
+@import "base";
+
+$primary-color: #07C1A7;
+
+$prefix: qp;
+
+
+.#{$prefix} {
+
+	&-container {
+
+	}
+
+	&-has-navbar {
+		
+		&--fixed {
+			padding: {
+				top: 70px;
+			}
+		}
+	}
+
+	&-navbar {
+
+		> li {
+      > a {
+        padding: 13px 5px;
+      }
+    }
+
+		&--radius {
+
+			.fa {
+				background-color: rgba(black, 0.2);
+				border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        vertical-align: middle;
+        text-align: center;
+			}
+
+		}
+	}
+
+  &-breadcrumb {
+
+    a {
+      color: #333;
+    }
+
+    > li {
+      &:first-child {
+        position: relative;
+        left: -25px;
+
+        + li {
+          &:before {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// overrides
+.navbar-default {
+	background-color: $primary-color;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #fff;
+}
+
+.breadcrumb {
+  background-color: transparent;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  border: none;
+}
